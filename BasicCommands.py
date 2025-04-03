@@ -12,6 +12,7 @@ print(driver.title)  # returns title of the page
 print(driver.current_url) # return urls of current page
 
 driver.find_element_by_xpath(".//button[text()='    click   ']").click()
-time.sleep(5)
+time.sleep(50)
+driver.close()  # closes current focused window
 driver.close()  # closes current focused window
 #driver.quit()
