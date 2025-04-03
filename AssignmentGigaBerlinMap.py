@@ -17,14 +17,16 @@ driver = LaunchBrowser()
 
 # getting the flipkart URL for testing
 driver.get("https://www.google.com/")
-
-driver.find_element_by_xpath(".//input[@name='q']").send_keys("wikipedia.com", Keys.ENTER)
-driver.find_element_by_xpath(".//input[@name='q']").send_keys("wikipedia231.com", Keys.ENTER)
-driver.find_element_by_xpath(".//h3[text()='Wikipedia']/parent::a").click()
+xp1= ".//input[@name='q']"
+xp2= ".//input[@name='q']"
+xp3= ".//h3[text()='Wikipedia']/parent::a"
+driver.find_element_by_xpath(xp1).send_keys("wikipedia.com", Keys.ENTER)
+driver.find_element_by_xpath(xp2).send_keys("wikipedia231.com", Keys.ENTER)
+driver.find_element_by_xpath(xp3).click()
 
 driver.find_element_by_id("searchInput").send_keys("Giga Berlin", Keys.ENTER)
-
-coordinates = driver.find_element_by_xpath(".//span[@class='geo-dec']").text
+xp4 = ".//span[@class='geo-dec']"
+coordinates = driver.find_element_by_xpath(xp4).text
 
 print(coordinates)
 
