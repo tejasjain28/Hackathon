@@ -20,10 +20,16 @@ insert.click()
 
 # 4. Enter the company name as INFOSYS and select 2nd element from dropdown
 driver.find_element(
-    By.XPATH, "//input[@placeholder='Start typing here....']").send_keys("INFOSYS")
+    By.XPATH, "//input[@placeholder='Start typing here....']").send_keys("INFOSYS"
 print("is it enter company name")
 
 # wait for element
     # 4.1 Selecting 2nd value of dropdown for INFOSYS 
 dropdown = driver.find_element_by_xpath(".//div[@class='Select-menu-outer']") #.get_attribute("innerHTML")
 dropdown.find_element_by_xpath(".//div[@role='listbox']/div[2]").click()
+
+
+dropdown.find_element_by_xpath(".//div[@role='listbox']/div[2]").click()
+
+
+####  this it comment dropdown.find_element_by_xpath(".//div[@role='listbox']/div[2]").click()
