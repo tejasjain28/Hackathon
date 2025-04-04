@@ -23,3 +23,6 @@ print(alert.text)
 
 # expected condition cheking attribute of the element
 wait.until(expected_conditions.element_located_selection_state_to_be(".//a[@href='#CancelTab']", ))
+
+
+This is fake code variable = "Try not to laugh" 
