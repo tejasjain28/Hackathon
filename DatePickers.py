@@ -28,13 +28,17 @@ def selectReturnJourneyDates():
 
     allMonthDays[departureDay].click()
     driver.find_element_by_id("datepicker1").click()
+    driver.find_element_by_id("datepicker1").click()
     print("selecting return date")
     allMonthDays[returnDay].click()
 
 
 # driver.get("http://demo.automationtesting.in/TinyMCE.html")
-
+# driver.get("http://demo.automationtesting.in/Datepicker.html")
+# driver.find_element_by_id("datepicker1").click()
 # driver.find_element_by_tag_name("textarea").send_keys("asdfasdfasdfasdfasdfasdfasdfasdfasdfsadfasdfasdfasdfasdfasdfasdfasdfasdfasfasdfasdasdfasdfasdfasdfasdfasdfasdfasdf")
+
+
 
 driver.get("http://demo.automationtesting.in/Datepicker.html")
 driver.find_element_by_id("datepicker1").click()
