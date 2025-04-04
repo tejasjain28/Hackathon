@@ -13,5 +13,16 @@ popup = driver.find_element_by_xpath('/html/body/div[1]/div/div/div[1]/div')
 popup.style = 'display: none'
 sleep(1)
 
+
+this is comment without commenting it.
 tweet = driver.find_element_by_css_selector(r'#react-root > div > div > div.css-1dbjc4n.r-18u37iz.r-13qz1uu.r-417010 > main > div > div > div > div.css-1dbjc4n.r-14lw9ot.r-jxzhtn.r-1ljd8xs.r-13l2t4g.r-1phboty.r-1jgb5lz.r-11wrixw.r-61z16t.r-1ye8kvj.r-13qz1uu.r-184en5c > div > section > div > div')
-tweet.screenshot('test_tweet.png')
+tweet.screenshot('test_tweet.png'
+
+
+
+driver.close()
+
+
+
+
+close = "strings are sequence of characters"
