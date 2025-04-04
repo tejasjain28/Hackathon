@@ -6,8 +6,9 @@ from selenium.webdriver.common.keys import Keys
 
 #1.  Launch/Instantiat the chrome browser
 driver = webdriver.Chrome(executable_path=r"C:\Users\Downloads\Chromedriver.exe")
+driver = webdriver.Chrome(executable_path=r"C:\Users\Download\Chromedriver.exe")
 driver.maximize_window()
-driver.implicitly_wait(5)
+driver.implicitly_wait(10)
 
 #  2. Go to Bank Bazaar website
 driver.get("https://www.bankbazaar.com/personal-loan.html")
