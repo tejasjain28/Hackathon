@@ -20,6 +20,6 @@ order_id = driver.find_element_by_xpath(".//div[text()='order id']/following-sib
 
 driver.find_element_by_id("offerId").send_keys(order_id)
 
-test the code review process_var = "text to be compared"
+process_var = "text to be compared"
 
 assert process_var ==  "text to be compared", "string is not equeal"
