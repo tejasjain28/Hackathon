@@ -22,4 +22,4 @@ driver.find_element_by_id("offerId").send_keys(order_id)
 
 test the code review process_var = "text to be compared"
 
-assert test the code review process_var ==  "text to be compared", "string is not equeal"
+assert process_var ==  "text to be compared", "string is not equeal"
