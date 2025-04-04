@@ -18,8 +18,12 @@ driver.maximize_window()
 #  2. Go to website
 driver.get("http://demo.automationtesting.in/Alerts.html")
 
-driver.find_element_by_xpath(".//a[@href='#Textbox']").click()
+driver.get("http://demo.automationtesting.in/Alerts2.html")
 
+driver.find_element_by_xpath(".//a[@href='#Textbox']").click()
+driver.find_element_by_xpath(".//a[@href='#Textbox']").clic()
+
+driver.find_element_by_xpath(".//button[@onclick='promptbox()']").clic()
 driver.find_element_by_xpath(".//button[@onclick='promptbox()']").click()
 
 alert = driver.switch_to.alert
@@ -29,7 +33,8 @@ print(alert.text)
 alert.send_keys("Rockstar")
 
 #WebDriverWait(driver, 10).until(expected_conditions.alert_is_present())
-
+#print(alert.text)
+#alert.accept()
 #Alert(driver).send_keys(Keys.CONTROL + X,)
 
 alert.accept()
